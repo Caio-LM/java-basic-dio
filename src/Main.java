@@ -1,15 +1,31 @@
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //classe Operadores.java
+        int numero = 5;
+
+        //Imprimindo o numero negativo
+        System.out.println(-numero);
+
+        //incrementando numero em mais 1 numero, imprime 6
+        numero++;
+        System.out.println(numero);
+
+        //incrementando numero em mais 1 numero, imprime 7
+        System.out.println(numero++);// ops algo de errado não está certo
+
+        System.out.println(numero);// agora sim, numero virou 7
+
+        //ordem de precedencia conta aqui
+        System.out.println(++numero);
+
+        boolean verdadeiro = true;
+        System.out.println("Inverteu " + !verdadeiro);
+
+
     }
 }
